@@ -91,19 +91,3 @@ body {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
 }
-
-/* Fixed nav: transparent over the hero, frosted once the page scrolls. */
-.site-nav {
-  background: transparent;
-  border-bottom: 1px solid transparent;
-  transition:
-    background-color 0.3s ease,
-    border-color 0.3s ease;
-}
-
-.site-nav.is-scrolled {
-  background: rgba(5, 6, 7, 0.85);
-  border-bottom-color: var(--line);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
