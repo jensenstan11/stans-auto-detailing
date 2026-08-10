@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Mobile Detailing Services & Pricing in Raleigh, NC",
   description:
     "Transparent mobile detailing pricing in Raleigh–Durham: Exterior Detail from $75, Interior Detail from $125, Full Detail from $175. Ceramic coating, paint correction & add-ons available.",
+  alternates: { canonical: "/services" },
 };
 
 export default function ServicesPage() {

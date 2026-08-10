@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Detailing Memberships & Maintenance Plans in Raleigh, NC",
   description:
     "Keep your car showroom-ready year round. Monthly, bi-weekly, and weekly mobile detailing plans in Raleigh–Durham with member pricing on every add-on.",
+  alternates: { canonical: "/memberships" },
 };
 
 export default function MembershipsPage() {

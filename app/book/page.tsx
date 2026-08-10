@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Book Mobile Detailing Online | Raleigh–Durham, NC",
   description:
     "Book your mobile car detail online in under a minute. Stan's Auto Detailing comes to your home or office anywhere in Raleigh, Durham, Cary & Apex.",
+  alternates: { canonical: "/book" },
 };
 
 export default function BookPage() {

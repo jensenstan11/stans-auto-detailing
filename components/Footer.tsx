@@ -68,13 +68,21 @@ export default function Footer() {
               {areas.slice(0, 6).map((a) => (
                 <li key={a.slug}>
                   <Link
-                    href="/service-areas"
+                    href={`/service-areas/${a.slug}`}
                     className="text-muted transition-colors hover:text-ink"
                   >
                     {a.name} mobile detailing
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link
+                  href="/service-areas"
+                  className="text-muted transition-colors hover:text-ink"
+                >
+                  All service areas
+                </Link>
+              </li>
             </ul>
           </nav>
 

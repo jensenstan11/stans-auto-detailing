@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { site } from "@/lib/site";
+import { areas, site } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/services",
     "/memberships",
     "/service-areas",
+    ...areas.map((a) => `/service-areas/${a.slug}`),
     "/gallery",
     "/book",
     "/contact",

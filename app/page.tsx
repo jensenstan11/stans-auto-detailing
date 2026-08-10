@@ -51,7 +51,7 @@ export default function Home() {
             Serving Raleigh · Durham · Cary · Apex
           </p>
           <h1 className="display mt-8 text-[15vw] sm:text-8xl lg:text-[7.5rem]">
-            Driven by
+            Driven by{" "}
             <br />
             <span className="dim">perfection.</span>
           </h1>
@@ -147,12 +147,16 @@ export default function Home() {
             </p>
           </Reveal>
           <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {["IMG_5769.jpg", "IMG_1406.jpg", "IMG_5765.jpg"].map((f, i) => (
+            {[
+              ["IMG_5769.jpg", "Black McLaren 570S after a full detail in a Raleigh driveway"],
+              ["IMG_1406.jpg", "Matte gray Mercedes-AMG GT 63 detailed at a client's home in Raleigh"],
+              ["IMG_5765.jpg", "Black McLaren 570S with freshly detailed paint, rear three-quarter view"],
+            ].map(([f, alt], i) => (
               <Reveal key={f} delay={i * 90}>
                 <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
                   <Image
                     src={`/photos/${f}`}
-                    alt="Vehicle detailed by Stan's Auto Detailing"
+                    alt={alt}
                     fill
                     sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                     className="object-cover transition duration-500 hover:scale-105"

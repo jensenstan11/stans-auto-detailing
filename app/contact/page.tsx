@@ -7,11 +7,26 @@ export const metadata: Metadata = {
   title: "Contact & FAQ | Mobile Detailing in Raleigh, NC",
   description:
     "Questions about mobile detailing in Raleigh–Durham? Call or text Stan's Auto Detailing at 315-380-4885, or read our answers to the most common questions.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-6 pb-16 pt-40 sm:pb-24">
           <div className="grid gap-12 lg:grid-cols-[1.1fr_1fr]">

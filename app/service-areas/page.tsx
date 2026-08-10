@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import CtaBand from "@/components/CtaBand";
 import Reveal from "@/components/Reveal";
 import { areas, site } from "@/lib/site";
@@ -7,6 +8,7 @@ export const metadata: Metadata = {
   title: "Mobile Detailing Service Areas | Raleigh, Durham, Cary & Apex, NC",
   description:
     "Stan's Auto Detailing comes to your driveway across the Triangle: Raleigh, Durham, Cary, Apex, Wake Forest, Holly Springs, Garner and more. Fully mobile — home, office, or job site.",
+  alternates: { canonical: "/service-areas" },
 };
 
 export default function ServiceAreasPage() {
@@ -51,7 +53,10 @@ export default function ServiceAreasPage() {
           <div className="grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2">
             {areas.map((a, i) => (
               <Reveal key={a.slug} delay={(i % 2) * 80} className="bg-raised">
-                <div className="flex h-full flex-col p-8">
+                <Link
+                  href={`/service-areas/${a.slug}`}
+                  className="flex h-full flex-col p-8 transition-colors hover:bg-raised/60"
+                >
                   <h2 className="display text-2xl">
                     <span aria-hidden className="mr-2 text-accent">
                       ◍
@@ -61,7 +66,10 @@ export default function ServiceAreasPage() {
                   <p className="mt-3 text-sm leading-relaxed text-muted">
                     {a.blurb}
                   </p>
-                </div>
+                  <p className="mt-auto pt-5 text-xs font-semibold uppercase tracking-[0.14em] text-accent">
+                    {a.name} detailing →
+                  </p>
+                </Link>
               </Reveal>
             ))}
           </div>
