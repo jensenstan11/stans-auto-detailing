@@ -15,7 +15,7 @@ export default function BookPage() {
         <div className="mx-auto max-w-6xl px-6 pb-14 pt-40">
           <Reveal>
             <p className="eyebrow">Book online</p>
-            <h1 className="display mt-4 max-w-3xl text-5xl sm:text-7xl">
+            <h1 className="display mt-6 max-w-3xl text-5xl sm:text-7xl">
               Pick a time.
               <br />
               <span className="dim">We&apos;ll be there.</span>

@@ -17,12 +17,12 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-6xl px-6 pb-16 pt-40 sm:pb-24">
           <Reveal>
             <p className="eyebrow">Services & pricing</p>
-            <h1 className="display mt-4 max-w-3xl text-5xl sm:text-7xl">
+            <h1 className="display mt-8 max-w-3xl text-5xl sm:text-7xl">
               Transparent
               <br />
               <span className="dim">value.</span>
             </h1>
-            <p className="mt-6 max-w-xl leading-relaxed text-muted">
+            <p className="mt-8 max-w-xl leading-relaxed text-muted">
               Professional detailing packages priced by vehicle size — no
               hidden fees, no upsell games. Every service is performed at your
               home or office anywhere in {site.serviceAreaLabel}.
@@ -106,7 +106,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-28">
           <Reveal>
             <p className="eyebrow">Protection & correction</p>
-            <h2 className="display mt-4 max-w-2xl text-4xl sm:text-6xl">
+            <h2 className="display mt-8 max-w-2xl text-4xl sm:text-6xl">
               For paint that
               <br />
               <span className="dim">stays flawless.</span>
@@ -140,12 +140,12 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-28">
           <Reveal>
             <p className="eyebrow">Add-on services</p>
-            <h2 className="display mt-4 text-4xl sm:text-6xl">
+            <h2 className="display mt-6 text-4xl sm:text-6xl">
               Finish it
               <br />
               <span className="dim">your way.</span>
             </h2>
-            <p className="mt-6 max-w-xl text-sm leading-relaxed text-muted">
+            <p className="mt-8 max-w-xl text-sm leading-relaxed text-muted">
               Stack any of these onto a detail package. Tell us what your
               vehicle needs when you book and we&apos;ll confirm pricing up
               front.

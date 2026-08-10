@@ -31,12 +31,12 @@ export default function GalleryPage() {
         <div className="mx-auto max-w-6xl px-6 pb-16 pt-40 sm:pb-24">
           <Reveal>
             <p className="eyebrow">Gallery</p>
-            <h1 className="display mt-4 max-w-3xl text-5xl sm:text-7xl">
+            <h1 className="display mt-8 max-w-3xl text-5xl sm:text-7xl">
               The proof is in
               <br />
               <span className="dim">the paint.</span>
             </h1>
-            <p className="mt-6 max-w-xl leading-relaxed text-muted">
+            <p className="mt-8 max-w-xl leading-relaxed text-muted">
               Every photo below is a real customer vehicle, detailed on
               location somewhere in the Triangle. No stock imagery, no studio
               lighting — just clean cars in their own driveways.

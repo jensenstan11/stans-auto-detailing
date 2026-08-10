@@ -8,12 +8,12 @@ export default function CtaBand() {
       <div className="mx-auto max-w-4xl px-6 py-24 text-center sm:py-32">
         <Reveal>
           <p className="eyebrow">Ready when you are</p>
-          <h2 className="display mt-4 text-4xl sm:text-6xl">
+          <h2 className="display mt-6 text-4xl sm:text-6xl">
             Your driveway.
             <br />
             <span className="dim">Our detail.</span>
           </h2>
-          <p className="mx-auto mt-6 max-w-xl text-muted">
+          <p className="mx-auto mt-8 max-w-xl text-muted">
             Book online in under a minute, or text us a photo of your vehicle
             for a quick quote. We come to you anywhere in{" "}
             {site.serviceAreaLabel}.

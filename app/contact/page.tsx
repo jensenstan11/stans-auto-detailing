@@ -17,12 +17,12 @@ export default function ContactPage() {
           <div className="grid gap-12 lg:grid-cols-[1.1fr_1fr]">
             <Reveal>
               <p className="eyebrow">Contact</p>
-              <h1 className="display mt-4 text-5xl sm:text-7xl">
+              <h1 className="display mt-6 text-5xl sm:text-7xl">
                 Talk to
                 <br />
                 <span className="dim">Stan&apos;s.</span>
               </h1>
-              <p className="mt-6 max-w-md leading-relaxed text-muted">
+              <p className="mt-8 max-w-md leading-relaxed text-muted">
                 The fastest way to reach us is a text — send your vehicle, the
                 service you&apos;re after, and where you&apos;re located, and
                 we&apos;ll get right back to you.

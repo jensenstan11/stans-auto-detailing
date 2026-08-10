@@ -16,12 +16,12 @@ export default function MembershipsPage() {
         <div className="mx-auto max-w-6xl px-6 pb-16 pt-40 sm:pb-24">
           <Reveal>
             <p className="eyebrow">Memberships</p>
-            <h1 className="display mt-4 max-w-3xl text-5xl sm:text-7xl">
+            <h1 className="display mt-8 max-w-3xl text-5xl sm:text-7xl">
               Always
               <br />
               <span className="dim">showroom-ready.</span>
             </h1>
-            <p className="mt-6 max-w-xl leading-relaxed text-muted">
+            <p className="mt-8 max-w-xl leading-relaxed text-muted">
               Stop rebooking from scratch every time. Members get a standing
               spot on the schedule, locked-in savings, and a vehicle that never
               slips — we handle the calendar, you just hand over the keys.

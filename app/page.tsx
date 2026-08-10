@@ -43,24 +43,24 @@ export default function Home() {
           aria-hidden
           className="absolute inset-0 bg-gradient-to-t from-bg via-bg/55 to-bg/25"
         />
-        <div className="relative mx-auto w-full max-w-6xl px-6 pb-20 pt-40 sm:pb-28">
+        <div className="relative mx-auto flex w-full max-w-6xl flex-col items-center px-6 pb-24 pt-40 text-center sm:pb-32">
           <p className="inline-flex items-center gap-2 rounded-full border border-line bg-deep/70 px-4 py-2 text-[0.7rem] font-medium uppercase tracking-[0.2em] text-ink backdrop-blur">
             <span aria-hidden className="text-accent">
               ●
             </span>
             Serving Raleigh · Durham · Cary · Apex
           </p>
-          <h1 className="display mt-6 text-[17vw] leading-[0.92] sm:text-8xl lg:text-[7.5rem]">
+          <h1 className="display mt-8 text-[15vw] sm:text-8xl lg:text-[7.5rem]">
             Driven by
             <br />
             <span className="dim">perfection.</span>
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink/85">
+          <p className="mt-8 max-w-xl text-lg leading-relaxed text-ink/85">
             Professional-grade auto detailing, delivered to your driveway.
             Locally owned, fully insured, and obsessive about the details the
             car wash misses.
           </p>
-          <div className="mt-9 flex flex-wrap gap-3">
+          <div className="mt-10 flex flex-wrap justify-center gap-3">
             <Link
               href="/book"
               className="rounded-full bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.12em] text-[#05131f] transition hover:brightness-110"
@@ -136,12 +136,12 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
           <Reveal>
             <p className="eyebrow">The work</p>
-            <h2 className="display mt-4 max-w-2xl text-4xl sm:text-6xl">
+            <h2 className="display mt-8 max-w-2xl text-4xl sm:text-6xl">
               Real cars.
               <br />
               <span className="dim">Real driveways.</span>
             </h2>
-            <p className="mt-6 max-w-xl text-muted">
+            <p className="mt-8 max-w-xl text-muted">
               No stock photos here — every shot below is a vehicle we detailed
               somewhere in the Triangle.
             </p>
@@ -177,7 +177,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
           <Reveal>
             <p className="eyebrow">How it works</p>
-            <h2 className="display mt-4 text-4xl sm:text-6xl">
+            <h2 className="display mt-6 text-4xl sm:text-6xl">
               Simple. Mobile.
               <br />
               <span className="dim">Done right.</span>
@@ -207,11 +207,11 @@ export default function Home() {
           <div className="grid gap-12 lg:grid-cols-[1fr_1.2fr]">
             <Reveal>
               <p className="eyebrow">Beyond the wash</p>
-              <h2 className="display mt-4 text-4xl sm:text-5xl">
+              <h2 className="display mt-6 text-4xl sm:text-5xl">
                 Protection &<br />
                 <span className="dim">restoration.</span>
               </h2>
-              <p className="mt-6 max-w-md text-sm leading-relaxed text-muted">
+              <p className="mt-8 max-w-md text-sm leading-relaxed text-muted">
                 North Carolina sun, pollen, and humidity are hard on a car.
                 From ceramic coating to headlight restoration, we offer the
                 treatments that keep your vehicle protected between details.
@@ -246,12 +246,12 @@ export default function Home() {
         <div className="mx-auto max-w-4xl px-6 py-24 text-center sm:py-28">
           <Reveal>
             <p className="eyebrow">Why Stan&apos;s</p>
-            <h2 className="display mt-4 text-3xl sm:text-5xl">
+            <h2 className="display mt-6 text-3xl sm:text-5xl">
               Every detail
               <br />
               <span className="dim">matters.</span>
             </h2>
-            <p className="mx-auto mt-6 max-w-2xl leading-relaxed text-muted">
+            <p className="mx-auto mt-8 max-w-2xl leading-relaxed text-muted">
               We&apos;re a locally owned detailing team, not a franchise. We use
               eco-friendly, professional-grade products, we&apos;re fully
               insured, and we treat every car like it&apos;s our own — from

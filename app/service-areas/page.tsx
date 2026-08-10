@@ -16,12 +16,12 @@ export default function ServiceAreasPage() {
         <div className="mx-auto max-w-6xl px-6 pb-16 pt-40 sm:pb-24">
           <Reveal>
             <p className="eyebrow">Service areas</p>
-            <h1 className="display mt-4 max-w-3xl text-5xl sm:text-7xl">
+            <h1 className="display mt-8 max-w-3xl text-5xl sm:text-7xl">
               Serving the
               <br />
               <span className="dim">Triangle.</span>
             </h1>
-            <p className="mt-6 max-w-xl leading-relaxed text-muted">
+            <p className="mt-8 max-w-xl leading-relaxed text-muted">
               We&apos;re 100% mobile. Our fully equipped setup comes to your
               home, office, or job site anywhere in the Raleigh–Durham area —
               you never wait in a lobby or drop off a key.
