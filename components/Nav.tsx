@@ -17,6 +17,14 @@ const links = [
 export default function Nav() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
@@ -26,8 +34,12 @@ export default function Nav() {
   }, [open]);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4">
-      <div className="mx-auto flex max-w-6xl items-center justify-between rounded-full border border-line bg-deep/80 py-2 pl-5 pr-2 backdrop-blur-md">
+    <header
+      className={`site-nav fixed inset-x-0 top-0 z-50 ${
+        open || scrolled ? "is-scrolled" : ""
+      }`}
+    >
+      <div className="flex w-full items-center justify-between px-5 py-3 sm:px-8 lg:px-12">
         <Link href="/" aria-label="Stan's Auto Detailing — home" className="shrink-0">
           <Image
             src="/brand/logo-small-white.png"
@@ -35,11 +47,11 @@ export default function Nav() {
             width={132}
             height={102}
             priority
-            className="h-11 w-auto"
+            className="h-12 w-auto"
           />
         </Link>
 
-        <nav className="hidden items-center gap-7 md:flex" aria-label="Main">
+        <nav className="hidden items-center gap-8 md:flex" aria-label="Main">
           {links.map((l) => (
             <Link
               key={l.href}
@@ -53,7 +65,7 @@ export default function Nav() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
           <a
             href={site.phoneHref}
             className="hidden text-[0.82rem] font-medium tracking-wide text-muted transition-colors hover:text-ink lg:block"
@@ -81,11 +93,8 @@ export default function Nav() {
       </div>
 
       {open && (
-        <div className="fixed inset-0 top-[76px] z-40 bg-deep/95 backdrop-blur-md md:hidden">
-          <nav
-            className="flex flex-col gap-2 px-8 pt-10"
-            aria-label="Mobile"
-          >
+        <div className="fixed inset-x-0 bottom-0 top-[72px] z-40 bg-deep/95 backdrop-blur-md md:hidden">
+          <nav className="flex flex-col gap-2 px-8 pt-10" aria-label="Mobile">
             {links.map((l) => (
               <Link
                 key={l.href}
