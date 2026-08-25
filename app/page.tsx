@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import CtaBand from "@/components/CtaBand";
+import InstagramStrip from "@/components/InstagramStrip";
 import Reveal from "@/components/Reveal";
 import { addOns, packages, premiumServices } from "@/lib/site";
 
@@ -77,6 +78,8 @@ export default function Home() {
         </div>
       </section>
 
+      <InstagramStrip />
+
       {/* Packages strip */}
       <section className="border-t border-line">
         <div className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
@@ -127,61 +130,6 @@ export default function Home() {
             >
               Full package details & add-ons →
             </Link>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* Real work */}
-      <section className="border-t border-line bg-deep">
-        <div className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
-          <Reveal>
-            <p className="eyebrow">The work</p>
-            <h2 className="display mt-8 max-w-2xl text-4xl sm:text-6xl">
-              Real cars.
-              <br />
-              <span className="dim">Real driveways.</span>
-            </h2>
-            <p className="mt-8 max-w-xl text-muted">
-              No stock photos here — every shot below is a vehicle we detailed
-              somewhere in the Triangle.
-            </p>
-          </Reveal>
-          <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              ["IMG_5769.jpg", "Black McLaren 570S after a full detail in a Raleigh driveway"],
-              ["IMG_1406.jpg", "Matte gray Mercedes-AMG GT 63 detailed at a client's home in Raleigh"],
-              ["IMG_5765.jpg", "Black McLaren 570S with freshly detailed paint, rear three-quarter view"],
-            ].map(([f, alt], i) => (
-              <Reveal key={f} delay={i * 90}>
-                <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
-                  <Image
-                    src={`/photos/${f}`}
-                    alt={alt}
-                    fill
-                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                    className="object-cover transition duration-500 hover:scale-105"
-                  />
-                </div>
-              </Reveal>
-            ))}
-          </div>
-          <Reveal className="mt-8">
-            <div className="flex flex-wrap items-center gap-x-8 gap-y-3">
-              <Link
-                href="/gallery"
-                className="text-sm font-semibold uppercase tracking-[0.14em] text-accent transition hover:brightness-110"
-              >
-                See the gallery →
-              </Link>
-              <a
-                href="https://instagram.com/stansautodetailing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm font-semibold uppercase tracking-[0.14em] text-muted transition-colors hover:text-ink"
-              >
-                Follow @stansautodetailing
-              </a>
-            </div>
           </Reveal>
         </div>
       </section>
