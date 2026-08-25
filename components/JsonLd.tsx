@@ -15,6 +15,7 @@ export default function JsonLd() {
     image: `${site.domain}/photos/IMG_5768.jpg`,
     logo: `${site.domain}/brand/logo-black.png`,
     priceRange: "$75 - $450",
+    sameAs: [site.instagram].filter(Boolean),
     address: {
       "@type": "PostalAddress",
       addressLocality: "Raleigh",

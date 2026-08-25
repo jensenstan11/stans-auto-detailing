@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import InstagramIcon from "@/components/InstagramIcon";
 import { site } from "@/lib/site";
 
 const links = [
@@ -60,6 +61,17 @@ export default function Nav() {
           >
             {site.phone}
           </a>
+          {site.instagram && (
+            <a
+              href={site.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Stan's Auto Detailing on Instagram"
+              className="hidden h-10 w-10 items-center justify-center rounded-full border border-line text-muted transition hover:border-accent hover:text-accent md:flex"
+            >
+              <InstagramIcon className="h-[18px] w-[18px]" />
+            </a>
+          )}
           <Link
             href="/book"
             className="rounded-full bg-accent px-5 py-2.5 text-[0.82rem] font-semibold uppercase tracking-[0.12em] text-[#05131f] transition hover:brightness-110"
@@ -110,6 +122,17 @@ export default function Nav() {
                 Text
               </a>
             </div>
+            {site.instagram && (
+              <a
+                href={site.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 flex items-center justify-center gap-2.5 rounded-full border border-line py-3.5 text-sm font-semibold uppercase tracking-[0.12em] text-ink"
+              >
+                <InstagramIcon className="h-[18px] w-[18px]" />
+                @stansautodetailing
+              </a>
+            )}
           </nav>
         </div>
       )}

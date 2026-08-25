@@ -166,12 +166,22 @@ export default function Home() {
             ))}
           </div>
           <Reveal className="mt-8">
-            <Link
-              href="/gallery"
-              className="text-sm font-semibold uppercase tracking-[0.14em] text-accent transition hover:brightness-110"
-            >
-              See the gallery →
-            </Link>
+            <div className="flex flex-wrap items-center gap-x-8 gap-y-3">
+              <Link
+                href="/gallery"
+                className="text-sm font-semibold uppercase tracking-[0.14em] text-accent transition hover:brightness-110"
+              >
+                See the gallery →
+              </Link>
+              <a
+                href="https://instagram.com/stansautodetailing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-semibold uppercase tracking-[0.14em] text-muted transition-colors hover:text-ink"
+              >
+                Follow @stansautodetailing
+              </a>
+            </div>
           </Reveal>
         </div>
       </section>

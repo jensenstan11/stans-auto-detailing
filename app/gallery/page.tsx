@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import CtaBand from "@/components/CtaBand";
+import InstagramIcon from "@/components/InstagramIcon";
 import Reveal from "@/components/Reveal";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Detailing Gallery | Our Work Around Raleigh, NC",
@@ -63,6 +65,33 @@ export default function GalleryPage() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Instagram follow strip */}
+      <section className="border-t border-line bg-deep">
+        <div className="mx-auto max-w-4xl px-6 py-20 text-center sm:py-24">
+          <Reveal>
+            <InstagramIcon className="mx-auto h-8 w-8 text-accent" />
+            <h2 className="display mt-6 text-3xl sm:text-5xl">
+              The latest work,
+              <br />
+              <span className="dim">as it happens.</span>
+            </h2>
+            <p className="mx-auto mt-6 max-w-md text-sm leading-relaxed text-muted">
+              Before-and-afters, satisfying process clips, and every fresh
+              detail land on Instagram first.
+            </p>
+            <a
+              href={site.instagram ?? "#"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex items-center gap-2.5 rounded-full border border-line px-7 py-3.5 text-sm font-semibold uppercase tracking-[0.12em] text-ink transition hover:border-accent hover:text-accent"
+            >
+              <InstagramIcon className="h-[18px] w-[18px]" />
+              Follow @stansautodetailing
+            </a>
+          </Reveal>
         </div>
       </section>
 

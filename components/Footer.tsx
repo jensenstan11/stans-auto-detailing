@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import InstagramIcon from "@/components/InstagramIcon";
 import { areas, packages, site } from "@/lib/site";
 
 export default function Footer() {
@@ -34,6 +35,17 @@ export default function Footer() {
                 Text us
               </a>
             </div>
+            {site.instagram && (
+              <a
+                href={site.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex items-center gap-2.5 text-sm text-muted transition-colors hover:text-accent"
+              >
+                <InstagramIcon className="h-[18px] w-[18px]" />
+                @stansautodetailing
+              </a>
+            )}
           </div>
 
           <nav aria-label="Services">
