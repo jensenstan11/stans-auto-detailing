@@ -133,7 +133,7 @@ export default function Home() {
           <Reveal className="mt-8">
             <Link
               href="/services"
-              className="text-sm font-semibold uppercase tracking-[0.14em] text-accent transition hover:brightness-110"
+              className="font-display text-sm font-bold uppercase tracking-[0.08em] text-accent transition hover:brightness-110"
             >
               Full package details & add-ons →
             </Link>
@@ -188,7 +188,7 @@ export default function Home() {
               <div className="mt-8">
                 <Link
                   href="/services"
-                  className="text-sm font-semibold uppercase tracking-[0.14em] text-accent transition hover:brightness-110"
+                  className="font-display text-sm font-bold uppercase tracking-[0.08em] text-accent transition hover:brightness-110"
                 >
                   Explore all services →
                 </Link>
@@ -236,7 +236,7 @@ export default function Home() {
                   <p className="font-display text-2xl font-bold sm:text-3xl">
                     {stat}
                   </p>
-                  <p className="mt-2 text-xs uppercase tracking-[0.14em] text-muted">
+                  <p className="font-display mt-2 text-xs font-semibold uppercase tracking-[0.1em] text-muted">
                     {label}
                   </p>
                 </div>

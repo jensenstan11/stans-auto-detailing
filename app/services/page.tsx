@@ -46,7 +46,7 @@ export default function ServicesPage() {
                   }`}
                 >
                   {p.featured && (
-                    <p className="-mt-11 mb-4 self-start rounded-full bg-accent px-4 py-1.5 text-[0.68rem] font-bold uppercase tracking-[0.14em] text-[#05131f]">
+                    <p className="font-display -mt-11 mb-4 self-start rounded-full bg-accent px-4 py-1.5 text-[0.68rem] font-bold uppercase tracking-[0.1em] text-[#05131f]">
                       Most popular
                     </p>
                   )}
@@ -122,7 +122,7 @@ export default function ServicesPage() {
                   <div className="mt-auto pt-8">
                     <a
                       href={site.smsHref}
-                      className="text-sm font-semibold uppercase tracking-[0.14em] text-accent transition hover:brightness-110"
+                      className="font-display text-sm font-bold uppercase tracking-[0.08em] text-accent transition hover:brightness-110"
                     >
                       Text us for a quote →
                     </a>

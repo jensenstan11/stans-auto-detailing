@@ -24,14 +24,14 @@ export default function InstagramStrip() {
               href={site.instagram ?? "#"}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 text-sm font-semibold uppercase tracking-[0.16em] text-ink transition-colors hover:text-accent"
+              className="font-display inline-flex items-center gap-2.5 text-sm font-bold uppercase tracking-[0.08em] text-ink transition-colors hover:text-accent"
             >
               <InstagramIcon className="h-[18px] w-[18px] text-accent" />
               @stansautodetailing
             </a>
             <Link
               href="/gallery"
-              className="text-xs font-semibold uppercase tracking-[0.16em] text-muted transition-colors hover:text-ink"
+              className="font-display text-xs font-bold uppercase tracking-[0.08em] text-muted transition-colors hover:text-ink"
             >
               Full gallery →
             </Link>

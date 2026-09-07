@@ -127,7 +127,7 @@ export default async function AreaPage({
           <Reveal className="mt-8">
             <Link
               href="/services"
-              className="text-sm font-semibold uppercase tracking-[0.14em] text-accent transition hover:brightness-110"
+              className="font-display text-sm font-bold uppercase tracking-[0.08em] text-accent transition hover:brightness-110"
             >
               Full package details & add-ons →
             </Link>

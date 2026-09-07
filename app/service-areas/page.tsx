@@ -66,7 +66,7 @@ export default function ServiceAreasPage() {
                   <p className="mt-3 text-sm leading-relaxed text-muted">
                     {a.blurb}
                   </p>
-                  <p className="mt-auto pt-5 text-xs font-semibold uppercase tracking-[0.14em] text-accent">
+                  <p className="font-display mt-auto pt-5 text-xs font-bold uppercase tracking-[0.08em] text-accent">
                     {a.name} detailing →
                   </p>
                 </Link>

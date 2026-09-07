@@ -44,7 +44,7 @@ export default function MembershipsPage() {
                   }`}
                 >
                   {m.featured && (
-                    <p className="-mt-11 mb-4 self-start rounded-full bg-accent px-4 py-1.5 text-[0.68rem] font-bold uppercase tracking-[0.14em] text-[#05131f]">
+                    <p className="font-display -mt-11 mb-4 self-start rounded-full bg-accent px-4 py-1.5 text-[0.68rem] font-bold uppercase tracking-[0.1em] text-[#05131f]">
                       Best value · most popular
                     </p>
                   )}
@@ -59,7 +59,7 @@ export default function MembershipsPage() {
                         / {m.per}
                       </span>
                     </p>
-                    <p className="mt-2 text-xs uppercase tracking-[0.16em] text-muted">
+                    <p className="font-display mt-2 text-xs font-semibold uppercase tracking-[0.1em] text-muted">
                       {m.cadence} service
                     </p>
                   </div>
@@ -88,7 +88,7 @@ export default function MembershipsPage() {
             ))}
           </div>
           <Reveal className="mt-8">
-            <p className="text-center text-xs uppercase tracking-[0.16em] text-muted">
+            <p className="font-display text-center text-xs font-semibold uppercase tracking-[0.1em] text-muted">
               No contracts · cancel or pause anytime · pricing confirmed before
               your first visit
             </p>

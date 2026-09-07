@@ -45,7 +45,7 @@ export default function Nav() {
             <Link
               key={l.href}
               href={l.href}
-              className={`text-[0.82rem] font-medium uppercase tracking-[0.14em] transition-colors hover:text-ink ${
+              className={`font-display text-[0.78rem] font-bold uppercase tracking-[0.08em] transition-colors hover:text-ink ${
                 pathname.startsWith(l.href) ? "text-ink" : "text-muted"
               }`}
             >
