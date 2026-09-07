@@ -45,11 +45,12 @@ export default function Home() {
           className="absolute inset-0 bg-gradient-to-t from-bg via-bg/55 to-bg/25"
         />
         <div className="absolute inset-x-0 top-24 z-10 flex justify-center px-6 sm:top-28">
-          <p className="inline-flex items-center gap-2 rounded-full border border-line bg-deep/70 px-4 py-2 text-[0.62rem] font-medium uppercase tracking-[0.14em] text-ink backdrop-blur sm:text-[0.7rem] sm:tracking-[0.2em]">
+          <p className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-line bg-deep/70 px-4 py-2 font-display text-[0.58rem] font-bold uppercase tracking-[0.08em] text-ink backdrop-blur sm:text-[0.7rem] sm:tracking-[0.14em]">
             <span aria-hidden className="text-accent">
               ●
             </span>
-            Serving Raleigh · Durham · Cary · Apex
+            <span className="hidden sm:inline">Serving&nbsp;</span>
+            Raleigh · Durham · Cary · Apex
           </p>
         </div>
         <div className="relative mx-auto flex w-full max-w-6xl flex-col items-center px-6 pb-24 pt-40 text-center sm:pb-32">
