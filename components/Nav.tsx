@@ -103,7 +103,7 @@ export default function Nav() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="display border-b border-line py-4 text-3xl text-ink"
+                className="display border-b border-line py-4 text-[1.35rem] text-ink"
               >
                 {l.label}
               </Link>
