@@ -44,14 +44,16 @@ export default function Home() {
           aria-hidden
           className="absolute inset-0 bg-gradient-to-t from-bg via-bg/55 to-bg/25"
         />
-        <div className="relative mx-auto flex w-full max-w-6xl flex-col items-center px-6 pb-24 pt-40 text-center sm:pb-32">
+        <div className="absolute inset-x-0 top-24 z-10 flex justify-center px-6 sm:top-28">
           <p className="inline-flex items-center gap-2 rounded-full border border-line bg-deep/70 px-4 py-2 text-[0.62rem] font-medium uppercase tracking-[0.14em] text-ink backdrop-blur sm:text-[0.7rem] sm:tracking-[0.2em]">
             <span aria-hidden className="text-accent">
               ●
             </span>
             Serving Raleigh · Durham · Cary · Apex
           </p>
-          <h1 className="display mt-8 text-[7.5vw] sm:text-8xl lg:text-[7.5rem]">
+        </div>
+        <div className="relative mx-auto flex w-full max-w-6xl flex-col items-center px-6 pb-24 pt-40 text-center sm:pb-32">
+          <h1 className="display text-[7.5vw] sm:text-8xl lg:text-[7.5rem]">
             Driven by{" "}
             <br />
             <span className="dim">perfection.</span>
