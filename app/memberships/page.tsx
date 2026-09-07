@@ -76,10 +76,8 @@ export default function MembershipsPage() {
                   <div className="mt-auto pt-8">
                     <a
                       href={site.smsHref}
-                      className={`block rounded-full py-3.5 text-center text-sm font-semibold uppercase tracking-[0.12em] transition ${
-                        m.featured
-                          ? "bg-accent text-[#05131f] hover:brightness-110"
-                          : "border border-line text-ink hover:border-accent hover:text-accent"
+                      className={`btn w-full ${
+                        m.featured ? "btn-primary" : "btn-ghost"
                       }`}
                     >
                       Text us to join

@@ -86,7 +86,7 @@ export default function GalleryPage() {
               href={site.instagram ?? "#"}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center gap-2.5 rounded-full border border-line px-7 py-3.5 text-sm font-semibold uppercase tracking-[0.12em] text-ink transition hover:border-accent hover:text-accent"
+              className="btn btn-ghost mt-8"
             >
               <InstagramIcon className="h-[18px] w-[18px]" />
               Follow @stansautodetailing

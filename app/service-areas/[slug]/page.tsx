@@ -76,13 +76,13 @@ export default async function AreaPage({
             <div className="mt-10 flex flex-wrap gap-3">
               <Link
                 href="/book"
-                className="rounded-full bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.12em] text-[#05131f] transition hover:brightness-110"
+                className="btn btn-primary"
               >
                 Book in {area.name}
               </Link>
               <a
                 href={site.smsHref}
-                className="rounded-full border border-line px-8 py-4 text-sm font-semibold uppercase tracking-[0.12em] text-ink transition hover:border-accent hover:text-accent"
+                className="btn btn-ghost"
               >
                 Text {site.phone}
               </a>

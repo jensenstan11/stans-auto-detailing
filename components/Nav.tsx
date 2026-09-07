@@ -74,7 +74,7 @@ export default function Nav() {
           )}
           <Link
             href="/book"
-            className="rounded-full bg-accent px-5 py-2.5 text-[0.82rem] font-semibold uppercase tracking-[0.12em] text-[#05131f] transition hover:brightness-110"
+            className="btn btn-primary btn-sm"
           >
             Book now
           </Link>
@@ -111,13 +111,13 @@ export default function Nav() {
             <div className="mt-8 flex gap-3">
               <a
                 href={site.phoneHref}
-                className="flex-1 rounded-full border border-line py-3.5 text-center text-sm font-semibold uppercase tracking-[0.12em]"
+                className="btn btn-ghost flex-1"
               >
                 Call
               </a>
               <a
                 href={site.smsHref}
-                className="flex-1 rounded-full border border-line py-3.5 text-center text-sm font-semibold uppercase tracking-[0.12em]"
+                className="btn btn-ghost flex-1"
               >
                 Text
               </a>
@@ -127,7 +127,7 @@ export default function Nav() {
                 href={site.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 flex items-center justify-center gap-2.5 rounded-full border border-line py-3.5 text-sm font-semibold uppercase tracking-[0.12em] text-ink"
+                className="btn btn-ghost mt-4 w-full"
               >
                 <InstagramIcon className="h-[18px] w-[18px]" />
                 @stansautodetailing

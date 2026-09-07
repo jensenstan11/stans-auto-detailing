@@ -24,13 +24,13 @@ export default function Footer() {
             <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href={site.phoneHref}
-                className="rounded-full border border-line px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.12em] text-ink transition hover:border-accent hover:text-accent"
+                className="btn btn-ghost btn-sm"
               >
                 Call {site.phone}
               </a>
               <a
                 href={site.smsHref}
-                className="rounded-full border border-line px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.12em] text-ink transition hover:border-accent hover:text-accent"
+                className="btn btn-ghost btn-sm"
               >
                 Text us
               </a>

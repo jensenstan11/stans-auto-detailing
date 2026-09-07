@@ -8,19 +8,19 @@ export default function MobileCtaBar() {
       <div className="grid grid-cols-3 gap-2 px-4 py-3">
         <a
           href={site.phoneHref}
-          className="rounded-full border border-line py-3 text-center text-xs font-semibold uppercase tracking-[0.12em] text-ink"
+          className="btn btn-ghost btn-sm"
         >
           Call
         </a>
         <a
           href={site.smsHref}
-          className="rounded-full border border-line py-3 text-center text-xs font-semibold uppercase tracking-[0.12em] text-ink"
+          className="btn btn-ghost btn-sm"
         >
           Text
         </a>
         <Link
           href="/book"
-          className="rounded-full bg-accent py-3 text-center text-xs font-semibold uppercase tracking-[0.12em] text-[#05131f]"
+          className="btn btn-primary btn-sm"
         >
           Book
         </Link>

@@ -64,13 +64,13 @@ export default function Home() {
           <div className="mt-10 flex flex-wrap justify-center gap-3">
             <Link
               href="/book"
-              className="rounded-full bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-[0.12em] text-[#05131f] transition hover:brightness-110"
+              className="btn btn-primary"
             >
               Book your detail
             </Link>
             <Link
               href="/services"
-              className="rounded-full border border-ink/25 bg-deep/50 px-8 py-4 text-sm font-semibold uppercase tracking-[0.12em] text-ink backdrop-blur transition hover:border-accent hover:text-accent"
+              className="btn btn-ghost"
             >
               See packages & pricing
             </Link>

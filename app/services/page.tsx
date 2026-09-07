@@ -79,10 +79,8 @@ export default function ServicesPage() {
                   <div className="mt-auto pt-8">
                     <Link
                       href="/book"
-                      className={`block rounded-full py-3.5 text-center text-sm font-semibold uppercase tracking-[0.12em] transition ${
-                        p.featured
-                          ? "bg-accent text-[#05131f] hover:brightness-110"
-                          : "border border-line text-ink hover:border-accent hover:text-accent"
+                      className={`btn w-full ${
+                        p.featured ? "btn-primary" : "btn-ghost"
                       }`}
                     >
                       Book {p.name}
