@@ -38,11 +38,15 @@ export default function Home() {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[62%_center]"
+          className="object-cover object-[30%_center] sm:object-[62%_center]"
         />
         <div
           aria-hidden
           className="absolute inset-0 bg-gradient-to-t from-bg via-bg/55 to-bg/25"
+        />
+        <div
+          aria-hidden
+          className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-deep/80 to-transparent"
         />
         <div className="absolute inset-x-0 top-24 z-10 flex justify-center px-6 sm:top-28">
           <p className="inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-line bg-deep/70 px-4 py-2 font-display text-[0.58rem] font-bold uppercase tracking-[0.08em] text-ink backdrop-blur sm:text-[0.7rem] sm:tracking-[0.14em]">
