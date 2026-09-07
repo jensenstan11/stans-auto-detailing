@@ -17,7 +17,7 @@ export default function MembershipsPage() {
         <div className="mx-auto max-w-6xl px-6 pb-16 pt-40 sm:pb-24">
           <Reveal>
             <p className="eyebrow">Memberships</p>
-            <h1 className="display mt-8 max-w-3xl text-5xl sm:text-7xl">
+            <h1 className="display mt-8 max-w-3xl text-[7.5vw] sm:text-7xl">
               Always
               <br />
               <span className="dim">showroom-ready.</span>
@@ -33,7 +33,7 @@ export default function MembershipsPage() {
 
       <section>
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
-          <div className="grid gap-6 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
             {memberships.map((m, i) => (
               <Reveal key={m.name} delay={i * 90}>
                 <article
@@ -48,7 +48,7 @@ export default function MembershipsPage() {
                       Best value · most popular
                     </p>
                   )}
-                  <h2 className="display text-3xl">{m.name}</h2>
+                  <h2 className="display text-2xl sm:text-3xl">{m.name}</h2>
                   <p className="mt-4 text-sm leading-relaxed text-muted">
                     {m.blurb}
                   </p>

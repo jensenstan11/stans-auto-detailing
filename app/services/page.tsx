@@ -18,7 +18,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-6xl px-6 pb-16 pt-40 sm:pb-24">
           <Reveal>
             <p className="eyebrow">Services & pricing</p>
-            <h1 className="display mt-8 max-w-3xl text-5xl sm:text-7xl">
+            <h1 className="display mt-8 max-w-3xl text-[7.5vw] sm:text-7xl">
               Transparent
               <br />
               <span className="dim">value.</span>
@@ -35,7 +35,7 @@ export default function ServicesPage() {
       {/* Packages */}
       <section>
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
-          <div className="grid gap-6 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
             {packages.map((p, i) => (
               <Reveal key={p.slug} delay={i * 90}>
                 <article
@@ -107,13 +107,13 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-28">
           <Reveal>
             <p className="eyebrow">Protection & correction</p>
-            <h2 className="display mt-8 max-w-2xl text-4xl sm:text-6xl">
+            <h2 className="display mt-8 max-w-2xl text-[8vw] sm:text-6xl">
               For paint that
               <br />
               <span className="dim">stays flawless.</span>
             </h2>
           </Reveal>
-          <div className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-line bg-line md:grid-cols-2">
+          <div className="mt-12 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-line bg-line md:grid-cols-2">
             {premiumServices.map((s, i) => (
               <Reveal key={s.name} delay={i * 90} className="bg-raised">
                 <div className="flex h-full flex-col p-9">
@@ -141,7 +141,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-28">
           <Reveal>
             <p className="eyebrow">Add-on services</p>
-            <h2 className="display mt-6 text-4xl sm:text-6xl">
+            <h2 className="display mt-6 text-[8vw] sm:text-6xl">
               Finish it
               <br />
               <span className="dim">your way.</span>
@@ -152,7 +152,7 @@ export default function ServicesPage() {
               front.
             </p>
           </Reveal>
-          <div className="mt-12 grid gap-x-12 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid grid-cols-1 gap-x-12 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
             {addOns.map((a, i) => (
               <Reveal key={a.name} delay={(i % 3) * 70}>
                 <div className="border-t border-line pt-5">

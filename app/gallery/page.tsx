@@ -34,7 +34,7 @@ export default function GalleryPage() {
         <div className="mx-auto max-w-6xl px-6 pb-16 pt-40 sm:pb-24">
           <Reveal>
             <p className="eyebrow">Gallery</p>
-            <h1 className="display mt-8 max-w-3xl text-5xl sm:text-7xl">
+            <h1 className="display mt-8 max-w-3xl text-[7.5vw] sm:text-7xl">
               The proof is in
               <br />
               <span className="dim">the paint.</span>
@@ -50,7 +50,7 @@ export default function GalleryPage() {
 
       <section>
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {photos.map(([f, alt], i) => (
               <Reveal key={f} delay={(i % 3) * 80}>
                 <div className="relative aspect-[4/3] overflow-hidden rounded-xl">

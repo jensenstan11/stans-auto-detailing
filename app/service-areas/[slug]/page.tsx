@@ -63,7 +63,7 @@ export default async function AreaPage({
               </Link>{" "}
               / {area.name}
             </p>
-            <h1 className="display mt-6 max-w-3xl text-5xl sm:text-7xl">
+            <h1 className="display mt-6 max-w-3xl text-[7.5vw] sm:text-7xl">
               Mobile detailing
               <br />
               <span className="dim">in {area.name}.</span>
@@ -95,12 +95,12 @@ export default async function AreaPage({
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
           <Reveal>
             <p className="eyebrow">Popular in {area.name}</p>
-            <h2 className="display mt-6 text-4xl sm:text-5xl">
+            <h2 className="display mt-6 text-[8vw] sm:text-5xl">
               Packages &<br />
               <span className="dim">pricing.</span>
             </h2>
           </Reveal>
-          <div className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-line bg-line md:grid-cols-3">
+          <div className="mt-12 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-line bg-line md:grid-cols-3">
             {packages.map((p, i) => (
               <Reveal key={p.slug} delay={i * 90} className="bg-raised">
                 <div className="flex h-full flex-col p-8">
@@ -139,7 +139,7 @@ export default async function AreaPage({
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
           <Reveal>
             <p className="eyebrow">Why mobile works in {area.name}</p>
-            <div className="mt-8 grid gap-10 md:grid-cols-3">
+            <div className="mt-8 grid grid-cols-1 gap-10 md:grid-cols-3">
               {[
                 [
                   "Your schedule, not ours",

@@ -23,7 +23,9 @@ export default function Reveal({
           observer.disconnect();
         }
       },
-      { threshold: 0.15 },
+      // threshold 0 so tall blocks still reveal on small screens,
+      // where 15% of a large section may never fit in the viewport
+      { threshold: 0, rootMargin: "0px 0px -48px 0px" },
     );
     observer.observe(el);
     return () => observer.disconnect();

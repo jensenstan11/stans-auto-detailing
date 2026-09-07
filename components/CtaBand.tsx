@@ -8,7 +8,7 @@ export default function CtaBand() {
       <div className="mx-auto max-w-4xl px-6 py-24 text-center sm:py-32">
         <Reveal>
           <p className="eyebrow">Ready when you are</p>
-          <h2 className="display mt-6 text-4xl sm:text-6xl">
+          <h2 className="display mt-6 text-[8vw] sm:text-6xl">
             Your driveway.
             <br />
             <span className="dim">Our detail.</span>

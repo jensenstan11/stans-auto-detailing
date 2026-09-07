@@ -18,7 +18,7 @@ export default function ServiceAreasPage() {
         <div className="mx-auto max-w-6xl px-6 pb-16 pt-40 sm:pb-24">
           <Reveal>
             <p className="eyebrow">Service areas</p>
-            <h1 className="display mt-8 max-w-3xl text-5xl sm:text-7xl">
+            <h1 className="display mt-8 max-w-3xl text-[7.5vw] sm:text-7xl">
               Serving the
               <br />
               <span className="dim">Triangle.</span>
@@ -50,7 +50,7 @@ export default function ServiceAreasPage() {
 
       <section>
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
-          <div className="grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2">
             {areas.map((a, i) => (
               <Reveal key={a.slug} delay={(i % 2) * 80} className="bg-raised">
                 <Link

@@ -29,10 +29,10 @@ export default function ContactPage() {
       />
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-6 pb-16 pt-40 sm:pb-24">
-          <div className="grid gap-12 lg:grid-cols-[1.1fr_1fr]">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.1fr_1fr]">
             <Reveal>
               <p className="eyebrow">Contact</p>
-              <h1 className="display mt-6 text-5xl sm:text-7xl">
+              <h1 className="display mt-6 text-[7.5vw] sm:text-7xl">
                 Talk to
                 <br />
                 <span className="dim">Stan&apos;s.</span>

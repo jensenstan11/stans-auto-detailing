@@ -45,13 +45,13 @@ export default function Home() {
           className="absolute inset-0 bg-gradient-to-t from-bg via-bg/55 to-bg/25"
         />
         <div className="relative mx-auto flex w-full max-w-6xl flex-col items-center px-6 pb-24 pt-40 text-center sm:pb-32">
-          <p className="inline-flex items-center gap-2 rounded-full border border-line bg-deep/70 px-4 py-2 text-[0.7rem] font-medium uppercase tracking-[0.2em] text-ink backdrop-blur">
+          <p className="inline-flex items-center gap-2 rounded-full border border-line bg-deep/70 px-4 py-2 text-[0.62rem] font-medium uppercase tracking-[0.14em] text-ink backdrop-blur sm:text-[0.7rem] sm:tracking-[0.2em]">
             <span aria-hidden className="text-accent">
               ●
             </span>
             Serving Raleigh · Durham · Cary · Apex
           </p>
-          <h1 className="display mt-8 text-[15vw] sm:text-8xl lg:text-[7.5rem]">
+          <h1 className="display mt-8 text-[7.5vw] sm:text-8xl lg:text-[7.5rem]">
             Driven by{" "}
             <br />
             <span className="dim">perfection.</span>
@@ -86,7 +86,7 @@ export default function Home() {
           <Reveal>
             <p className="eyebrow">Packages</p>
             <div className="mt-4 flex flex-wrap items-end justify-between gap-6">
-              <h2 className="display max-w-xl text-4xl sm:text-6xl">
+              <h2 className="display max-w-xl text-[8vw] sm:text-6xl">
                 Three details.
                 <br />
                 <span className="dim">Zero shortcuts.</span>
@@ -98,7 +98,7 @@ export default function Home() {
             </div>
           </Reveal>
 
-          <div className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-line bg-line md:grid-cols-3">
+          <div className="mt-14 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-line bg-line md:grid-cols-3">
             {packages.map((p, i) => (
               <Reveal key={p.slug} delay={i * 90} className="bg-raised">
                 <div className="flex h-full flex-col p-8">
@@ -139,13 +139,13 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
           <Reveal>
             <p className="eyebrow">How it works</p>
-            <h2 className="display mt-6 text-4xl sm:text-6xl">
+            <h2 className="display mt-6 text-[8vw] sm:text-6xl">
               Simple. Mobile.
               <br />
               <span className="dim">Done right.</span>
             </h2>
           </Reveal>
-          <div className="mt-14 grid gap-10 md:grid-cols-3">
+          <div className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-3">
             {steps.map((s, i) => (
               <Reveal key={s.title} delay={i * 90}>
                 <div className="border-t border-line pt-6">
@@ -166,10 +166,10 @@ export default function Home() {
       {/* Beyond the wash — premium + add-ons teaser */}
       <section className="border-t border-line bg-deep">
         <div className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
-          <div className="grid gap-12 lg:grid-cols-[1fr_1.2fr]">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_1.2fr]">
             <Reveal>
               <p className="eyebrow">Beyond the wash</p>
-              <h2 className="display mt-6 text-4xl sm:text-5xl">
+              <h2 className="display mt-6 text-[7vw] sm:text-5xl">
                 Protection &<br />
                 <span className="dim">restoration.</span>
               </h2>
@@ -187,7 +187,7 @@ export default function Home() {
                 </Link>
               </div>
             </Reveal>
-            <div className="grid gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2">
+            <div className="grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2">
               {[...premiumServices, ...addOns.slice(0, 2)].map((s, i) => (
                 <Reveal key={s.name} delay={i * 70} className="bg-raised">
                   <div className="h-full p-7">
