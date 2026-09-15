@@ -1,6 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  images: {
+    // Instagram media/profile CDNs for the live feed strip.
+    remotePatterns: [
+      { protocol: "https", hostname: "**.cdninstagram.com" },
+      { protocol: "https", hostname: "**.fbcdn.net" },
+    ],
+  },
   // Preserve rankings from the old Squarespace site's URLs.
   async redirects() {
     return [
