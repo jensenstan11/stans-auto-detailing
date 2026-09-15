@@ -4,7 +4,7 @@ import Link from "next/link";
 import CtaBand from "@/components/CtaBand";
 import InstagramStrip from "@/components/InstagramStrip";
 import Reveal from "@/components/Reveal";
-import { addOns, packages, premiumServices, site } from "@/lib/site";
+import { addOns, packages, premiumServices, reviews, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Stan's Auto Detailing | Mobile Car Detailing in Raleigh–Durham, NC",
@@ -225,6 +225,49 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Reviews */}
+      <section className="border-t border-line">
+        <div className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
+          <Reveal>
+            <p className="eyebrow">Reviews</p>
+            <div className="mt-6 flex flex-wrap items-end justify-between gap-6">
+              <h2 className="display text-[8vw] sm:text-6xl">
+                Five stars.
+                <br />
+                <span className="dim">Every single one.</span>
+              </h2>
+              <a
+                href={site.googleReviewUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group pb-1"
+              >
+                <span aria-hidden className="text-lg tracking-[0.2em] text-accent">
+                  ★★★★★
+                </span>
+                <span className="font-display ml-3 text-sm font-bold uppercase tracking-[0.08em] text-muted transition-colors group-hover:text-ink">
+                  5.0 · 31 Google reviews →
+                </span>
+              </a>
+            </div>
+          </Reveal>
+          <div className="mt-14 grid grid-cols-1 gap-x-12 gap-y-10 md:grid-cols-3">
+            {reviews.map((r, i) => (
+              <Reveal key={r.name} delay={i * 90}>
+                <figure className="border-t border-line pt-6">
+                  <blockquote className="leading-relaxed text-ink/90">
+                    &ldquo;{r.quote}&rdquo;
+                  </blockquote>
+                  <figcaption className="font-display mt-5 text-xs font-bold uppercase tracking-[0.1em] text-muted">
+                    {r.name} · Google review
+                  </figcaption>
+                </figure>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Beyond the wash — premium + add-ons teaser */}
       <section className="border-t border-line bg-deep">
         <div className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
@@ -284,7 +327,7 @@ export default function Home() {
             <div className="mx-auto mt-12 grid max-w-2xl grid-cols-3 gap-6">
               {[
                 ["100%", "mobile — we come to you"],
-                ["5★", "rated by Raleigh drivers"],
+                ["5.0★", "31 Google reviews, all five stars"],
                 ["Insured", "and locally owned"],
               ].map(([stat, label]) => (
                 <div key={label} className="border-t border-line pt-5">

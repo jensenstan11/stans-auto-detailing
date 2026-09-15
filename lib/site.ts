@@ -247,6 +247,25 @@ export const areas: Area[] = [
   },
 ];
 
+// Real quotes from the Google Business Profile (5.0, 31 reviews).
+export const reviews = [
+  {
+    quote:
+      "The best experience all around! Excellent service, communication and my car hasn't looked this clean since I bought it! I will be coming back!",
+    name: "Liam R.",
+  },
+  {
+    quote:
+      "Very pleased with the level of care and attention to detail (literally)! Highly recommended to anyone who wants their car to look like it just left the dealership.",
+    name: "Jessica I.",
+  },
+  {
+    quote:
+      "Our vehicles take a beating with having kids and being used for work, but they look better than ever. Highly recommend!",
+    name: "Aaron W.",
+  },
+];
+
 export const faqs = [
   {
     q: "Do I need to provide water or electricity?",
