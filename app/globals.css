@@ -98,25 +98,15 @@ body {
   outline-offset: 3px;
 }
 
-/* Buttons — chamfered corners echoing the chopped letterforms of the
-   Stan's wordmark. Labels are set in the display face (Syne). */
+/* Buttons — soft rectangles, labels set in the display face (Syne). */
 .btn {
-  --cut: 10px;
-  position: relative;
-  isolation: isolate;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
   padding: 1.05rem 2.2rem;
-  clip-path: polygon(
-    var(--cut) 0,
-    100% 0,
-    100% calc(100% - var(--cut)),
-    calc(100% - var(--cut)) 100%,
-    0 100%,
-    0 var(--cut)
-  );
+  border-radius: 8px;
+  border: 1px solid transparent;
   font-family: var(--font-syne), sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
@@ -127,6 +117,7 @@ body {
   transition:
     filter 0.2s ease,
     color 0.2s ease,
+    border-color 0.2s ease,
     background-color 0.2s ease;
 }
 
@@ -135,8 +126,8 @@ body {
 }
 
 .btn-sm {
-  --cut: 8px;
   padding: 0.72rem 1.4rem;
+  border-radius: 7px;
   font-size: 0.72rem;
 }
 
@@ -149,37 +140,16 @@ body {
   filter: brightness(1.12);
 }
 
-/* Ghost: the element's own background is the 1px frame; the inset
-   pseudo-element paints the translucent interior beneath the label. */
 .btn-ghost {
   color: var(--text);
-  background: rgba(255, 255, 255, 0.25);
-}
-
-.btn-ghost::before {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  z-index: -1;
-  background: rgba(5, 6, 7, 0.62);
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  clip-path: polygon(
-    var(--cut) 0,
-    100% 0,
-    100% calc(100% - var(--cut)),
-    calc(100% - var(--cut)) 100%,
-    0 100%,
-    0 var(--cut)
-  );
-  transition: background-color 0.2s ease;
 }
 
 .btn-ghost:hover {
-  background: rgba(62, 155, 255, 0.65);
-  color: #eaf4ff;
-}
-
-.btn-ghost:hover::before {
-  background: rgba(9, 20, 32, 0.75);
+  border-color: rgba(62, 155, 255, 0.6);
+  color: var(--accent);
+  background: rgba(62, 155, 255, 0.07);
 }
