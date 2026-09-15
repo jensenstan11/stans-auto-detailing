@@ -62,6 +62,11 @@ export default function Footer() {
                 </li>
               ))}
               <li>
+                <Link href="/ceramic-coating" className="text-muted transition-colors hover:text-ink">
+                  Ceramic coating
+                </Link>
+              </li>
+              <li>
                 <Link href="/services#add-ons" className="text-muted transition-colors hover:text-ink">
                   Add-on services
                 </Link>

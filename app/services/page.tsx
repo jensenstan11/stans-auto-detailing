@@ -119,13 +119,21 @@ export default function ServicesPage() {
                   <p className="mt-4 text-sm leading-relaxed text-muted">
                     {s.blurb}
                   </p>
-                  <div className="mt-auto pt-8">
+                  <div className="mt-auto flex flex-wrap gap-x-8 gap-y-3 pt-8">
                     <a
                       href={site.smsHref}
                       className="font-display text-sm font-bold uppercase tracking-[0.08em] text-accent transition hover:brightness-110"
                     >
                       Text us for a quote →
                     </a>
+                    {s.name === "Ceramic Coating" && (
+                      <Link
+                        href="/ceramic-coating"
+                        className="font-display text-sm font-bold uppercase tracking-[0.08em] text-muted transition-colors hover:text-ink"
+                      >
+                        Learn more
+                      </Link>
+                    )}
                   </div>
                 </div>
               </Reveal>

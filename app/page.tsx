@@ -4,7 +4,7 @@ import Link from "next/link";
 import CtaBand from "@/components/CtaBand";
 import InstagramStrip from "@/components/InstagramStrip";
 import Reveal from "@/components/Reveal";
-import { addOns, packages, premiumServices } from "@/lib/site";
+import { addOns, packages, premiumServices, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Stan's Auto Detailing | Mobile Car Detailing in Raleigh–Durham, NC",
@@ -141,6 +141,61 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Ceramic coating feature */}
+      <section className="border-t border-line bg-deep">
+        <div className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
+          <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
+            <Reveal>
+              <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
+                <Image
+                  src="/photos/IMG_5763.jpg"
+                  alt="Mirror-gloss black paint after ceramic coating by Stan's Auto Detailing"
+                  fill
+                  sizes="(min-width: 1024px) 55vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+            </Reveal>
+            <Reveal delay={100}>
+              <p className="eyebrow">Ceramic coating</p>
+              <h2 className="display mt-6 text-[7vw] sm:text-5xl">
+                Years of gloss.
+                <br />
+                <span className="dim">One application.</span>
+              </h2>
+              <p className="mt-7 max-w-md leading-relaxed text-muted">
+                A professional SiO2 ceramic coating bonds to your clear coat
+                and outlasts any wax — repelling water, UV, pollen, and road
+                grime while your paint stays glass-smooth. Corrected, prepped,
+                and applied at your home.
+              </p>
+              <ul className="mt-7 space-y-2.5 text-sm">
+                {[
+                  "Years of protection, not weeks",
+                  "Hydrophobic — rain carries dirt off the paint",
+                  "Priced by vehicle & paint condition",
+                ].map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span aria-hidden className="mt-0.5 text-accent">
+                      ✓
+                    </span>
+                    <span className="text-ink/90">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-9 flex flex-wrap gap-3">
+                <a href={site.smsHref} className="btn btn-primary">
+                  Text for an estimate
+                </a>
+                <Link href="/ceramic-coating" className="btn btn-ghost">
+                  Learn more
+                </Link>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       {/* How it works */}
       <section className="border-t border-line">
         <div className="mx-auto max-w-6xl px-6 py-24 sm:py-32">
@@ -195,7 +250,7 @@ export default function Home() {
               </div>
             </Reveal>
             <div className="grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-line bg-line sm:grid-cols-2">
-              {[...premiumServices, ...addOns.slice(0, 2)].map((s, i) => (
+              {[premiumServices[1], ...addOns.slice(0, 3)].map((s, i) => (
                 <Reveal key={s.name} delay={i * 70} className="bg-raised">
                   <div className="h-full p-7">
                     <h3 className="font-semibold">{s.name}</h3>
