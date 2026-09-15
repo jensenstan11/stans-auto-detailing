@@ -19,22 +19,58 @@ export default function InstagramStrip() {
     <section className="border-t border-line bg-deep">
       <div className="mx-auto max-w-6xl px-6 py-14 sm:py-16">
         <Reveal>
-          <div className="flex flex-wrap items-center justify-between gap-4">
+          <div className="flex flex-wrap items-center justify-between gap-x-8 gap-y-6">
             <a
               href={site.instagram ?? "#"}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-display inline-flex items-center gap-2.5 text-sm font-bold uppercase tracking-[0.08em] text-ink transition-colors hover:text-accent"
+              className="group flex items-center gap-4"
             >
-              <InstagramIcon className="h-[18px] w-[18px] text-accent" />
-              @stansautodetailing
+              <span className="shrink-0 rounded-full bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] p-[2.5px]">
+                <Image
+                  src="/brand/ig-avatar.jpg"
+                  alt="Stan's Auto Detailing Instagram profile picture"
+                  width={64}
+                  height={64}
+                  className="h-14 w-14 rounded-full border-2 border-deep sm:h-16 sm:w-16"
+                />
+              </span>
+              <span>
+                <span className="font-display block text-sm font-bold uppercase tracking-[0.08em] text-ink transition-colors group-hover:text-accent">
+                  {site.instagramProfile.handle}
+                </span>
+                <span className="mt-0.5 block text-sm text-muted">
+                  {site.instagramProfile.name} · Mobile detailing · Raleigh, NC
+                </span>
+                <span className="mt-0.5 block text-xs text-muted">
+                  <span className="font-semibold text-ink/80">
+                    {site.instagramProfile.posts}
+                  </span>{" "}
+                  posts ·{" "}
+                  <span className="font-semibold text-ink/80">
+                    {site.instagramProfile.followers}
+                  </span>{" "}
+                  followers
+                </span>
+              </span>
             </a>
-            <Link
-              href="/gallery"
-              className="font-display text-xs font-bold uppercase tracking-[0.08em] text-muted transition-colors hover:text-ink"
-            >
-              Full gallery →
-            </Link>
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+              <a
+                href={site.instagram ?? "#"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-sm"
+              >
+                <InstagramIcon className="h-4 w-4" />
+                Follow
+              </a>
+              <Link
+                href="/gallery"
+                className="font-display text-xs font-bold uppercase tracking-[0.08em] text-muted transition-colors hover:text-ink"
+              >
+                Full gallery →
+              </Link>
+            </div>
           </div>
         </Reveal>
         <div className="mt-7 grid grid-cols-3 gap-2 sm:grid-cols-6 sm:gap-3">

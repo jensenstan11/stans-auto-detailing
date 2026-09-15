@@ -6,6 +6,13 @@ export const site = {
   phoneHref: "tel:+13153804885",
   smsHref: "sms:+13153804885",
   instagram: "https://instagram.com/stansautodetailing",
+  // Shown in the profile card on the home page — update as the account grows.
+  instagramProfile: {
+    name: "Jensen",
+    handle: "@stansautodetailing",
+    posts: 19,
+    followers: 368,
+  },
   // TODO before launch: confirm Facebook page URL with Stan (hidden while null)
   facebook: null as string | null,
   // Stan's existing Urable virtual shop (same link the old site's Book Online used)
