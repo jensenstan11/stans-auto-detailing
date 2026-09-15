@@ -189,7 +189,7 @@ export const areas: Area[] = [
     slug: "raleigh",
     name: "Raleigh",
     blurb:
-      "Home base. From Five Points driveways to downtown parking decks, most Raleigh appointments are serviced same-week.",
+      "Home base. From North Hills and Five Points driveways to downtown parking decks, most Raleigh appointments — Midtown, ITB, Brier Creek, and beyond — are serviced same-week.",
   },
   {
     slug: "durham",
