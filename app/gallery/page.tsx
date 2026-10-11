@@ -37,7 +37,6 @@ const photos: [string, string][] = [
   ["IMG_5759.jpg", "Black Land Rover Defender with gloss black wheels after a full detail"],
   ["tundra-silver.jpg", "Silver Toyota Tundra TRD mid-wash during a mobile detail"],
   ["mclaren-spider-rear.jpg", "McLaren 570S Spider rear three-quarter after a full exterior detail"],
-  ["IMG_5765.jpg", "Black McLaren 570S rear three-quarter view after a full exterior detail"],
   ["4runner-van.jpg", "Black Toyota 4Runner TRD detailed on site with the Stan's van behind it"],
   ["van-sunset.jpg", "The Stan's Auto Detailing mobile van at sunset — driven by perfection"],
 ];
