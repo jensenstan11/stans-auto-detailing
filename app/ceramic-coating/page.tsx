@@ -58,8 +58,8 @@ export default function CeramicCoatingPage() {
       {/* Hero */}
       <section className="relative flex min-h-[85svh] flex-col justify-end overflow-hidden">
         <Image
-          src="/photos/IMG_5763.jpg"
-          alt="Deep gloss on black paint after ceramic coating by Stan's Auto Detailing"
+          src="/photos/mclaren-spider-front.jpg"
+          alt="Black McLaren 570S Spider with deep ceramic-coated gloss, detailed by Stan's Auto Detailing"
           fill
           priority
           sizes="100vw"

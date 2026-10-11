@@ -1,9 +1,24 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import CtaBand from "@/components/CtaBand";
 import Reveal from "@/components/Reveal";
 import { areas, packages, site } from "@/lib/site";
+
+// One on-location shot per city page (illustrative, not geo-specific).
+const areaPhotos: Record<string, [string, string]> = {
+  raleigh: ["tesla-plaid-van.jpg", "Tesla Model S Plaid detailed on site with the Stan's Auto Detailing van"],
+  durham: ["chrysler-300s.jpg", "Blacked-out Chrysler 300S detailed in a client's driveway"],
+  cary: ["genesis-gv80.jpg", "Silver Genesis GV80 after a full exterior detail"],
+  apex: ["tacoma-trdpro-white.jpg", "White Toyota Tacoma TRD Pro detailed at golden hour"],
+  "wake-forest": ["xc90-red.jpg", "Red Volvo XC90 R-Design after an exterior detail"],
+  morrisville: ["tesla-model3.jpg", "Gray Tesla Model 3 with fresh paint gloss"],
+  "holly-springs": ["gla45-white.jpg", "White Mercedes-AMG GLA 45 after a full exterior detail"],
+  "fuquay-varina": ["tacoma-trd-house.jpg", "White Toyota Tacoma TRD Pro detailed in a driveway"],
+  garner: ["tundra-silver.jpg", "Silver Toyota Tundra TRD during a mobile detail"],
+  knightdale: ["4runner-van.jpg", "Black Toyota 4Runner detailed on site with the Stan's van behind it"],
+};
 
 export function generateStaticParams() {
   return areas.map((a) => ({ slug: a.slug }));
@@ -86,6 +101,22 @@ export default async function AreaPage({
               >
                 Text {site.phone}
               </a>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <section>
+        <div className="mx-auto max-w-6xl px-6 pt-14">
+          <Reveal>
+            <div className="relative aspect-[16/9] overflow-hidden rounded-xl sm:aspect-[21/9]">
+              <Image
+                src={`/photos/${(areaPhotos[area.slug] ?? ["van-sunset.jpg", "The Stan's Auto Detailing mobile van"])[0]}`}
+                alt={(areaPhotos[area.slug] ?? ["", "Mobile detailing by Stan's Auto Detailing"])[1]}
+                fill
+                sizes="(min-width: 1152px) 1104px, 100vw"
+                className="object-cover"
+              />
             </div>
           </Reveal>
         </div>
