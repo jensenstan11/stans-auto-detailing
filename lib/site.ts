@@ -136,12 +136,11 @@ export const premiumServices = [
   },
 ];
 
-// NOTE: sample tiers — pricing must be confirmed with Stan before launch.
 export const memberships = [
   {
     name: "The Daily",
     cadence: "monthly",
-    price: 135,
+    price: 109,
     per: "month",
     blurb:
       "Essential care for the daily driver. One full reset every month, always on the schedule.",
@@ -155,7 +154,7 @@ export const memberships = [
   {
     name: "The Enthusiast",
     cadence: "bi-weekly",
-    price: 250,
+    price: 199,
     per: "month",
     blurb:
       "For those who demand perfection. Your vehicle never goes more than two weeks without a professional touch.",
@@ -171,7 +170,7 @@ export const memberships = [
   {
     name: "The Collector",
     cadence: "weekly",
-    price: 450,
+    price: 309,
     per: "month",
     blurb:
       "Showroom-ready, always. Weekly exterior care plus a monthly deep clean of the cabin.",

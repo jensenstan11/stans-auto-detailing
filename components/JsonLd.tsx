@@ -14,7 +14,7 @@ export default function JsonLd() {
     telephone: "+1-315-380-4885",
     image: `${site.domain}/photos/IMG_5768.jpg`,
     logo: `${site.domain}/brand/logo-black.png`,
-    priceRange: "$75 - $450",
+    priceRange: "$75 - $309",
     sameAs: [site.instagram].filter(Boolean),
     address: {
       "@type": "PostalAddress",
