@@ -148,8 +148,8 @@ export default function Home() {
             <Reveal>
               <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
                 <Image
-                  src="/photos/IMG_5763.jpg"
-                  alt="Mirror-gloss black paint after ceramic coating by Stan's Auto Detailing"
+                  src="/photos/gle63-front.jpg"
+                  alt="Satin black Mercedes-AMG GLE 63 S with ceramic-protected paint, detailed by Stan's Auto Detailing"
                   fill
                   sizes="(min-width: 1024px) 55vw, 100vw"
                   className="object-cover"

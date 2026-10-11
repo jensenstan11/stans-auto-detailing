@@ -13,18 +13,24 @@ export const metadata: Metadata = {
 };
 
 const photos: [string, string][] = [
-  ["IMG_5768.jpg", "Black McLaren 570S detailed in a Raleigh driveway, front three-quarter view"],
+  ["mclaren-spider-front.jpg", "Black McLaren 570S Spider with orange calipers after a full detail in Raleigh"],
+  ["defender-grille.jpg", "Blacked-out Land Rover Defender 110 grille after an exterior detail"],
+  ["tacoma-trdpro-white.jpg", "White Toyota Tacoma TRD Pro detailed at golden hour in Raleigh"],
+  ["mclaren-interior.jpg", "McLaren 570S orange and alcantara interior after an interior detail"],
+  ["gle63-front.jpg", "Satin black Mercedes-AMG GLE 63 S coupe detailed at a client's home"],
+  ["porsche-911-yellow.jpg", "Yellow Porsche 911 Carrera cabriolet after a full detail"],
+  ["corvette-garage.jpg", "Orange Chevrolet Corvette C8 convertible detailed in a parking garage"],
+  ["range-rover-hood.jpg", "Blacked-out Range Rover Sport hood and grille after an exterior detail"],
+  ["tacoma-army.jpg", "Lifted army green Toyota Tacoma TRD with fresh paint gloss"],
   ["IMG_5769.jpg", "Black McLaren 570S with a Land Rover Defender behind it after mobile detailing"],
-  ["IMG_5765.jpg", "Black McLaren 570S rear three-quarter view after a full exterior detail"],
+  ["xc90-red.jpg", "Red Volvo XC90 R-Design after an exterior detail in the Triangle"],
+  ["bmw-x1-interior.jpg", "BMW X1 red and black interior after a full interior detail"],
   ["IMG_1406.jpg", "Matte gray Mercedes-AMG GT 63 detailed at a client's home"],
-  ["IMG_5758.jpg", "Customer vehicle after a full detail in the Raleigh–Durham area"],
+  ["tacoma-trd-house.jpg", "White Toyota Tacoma TRD Pro detailed in a Raleigh driveway"],
   ["IMG_5759.jpg", "Black Land Rover Defender with gloss black wheels after a full detail"],
-  ["IMG_5760.jpg", "Freshly detailed customer vehicle in a Triangle-area driveway"],
-  ["IMG_5762.jpg", "Detailed customer vehicle photographed on location in Raleigh"],
-  ["IMG_5763.jpg", "Paintwork shining after a mobile detail in the Raleigh–Durham area"],
-  ["IMG_5764.jpg", "Customer vehicle after detailing service in the Triangle"],
-  ["IMG_5766.jpg", "Exterior detail results on a customer vehicle in Raleigh"],
-  ["IMG_5770.jpg", "Finished mobile detail on a customer vehicle in the Raleigh area"],
+  ["mclaren-spider-rear.jpg", "McLaren 570S Spider rear three-quarter after a full exterior detail"],
+  ["IMG_5765.jpg", "Black McLaren 570S rear three-quarter view after a full exterior detail"],
+  ["van-sunset.jpg", "The Stan's Auto Detailing mobile van at sunset — driven by perfection"],
 ];
 
 export default function GalleryPage() {

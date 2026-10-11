@@ -7,12 +7,12 @@ import { site } from "@/lib/site";
 
 // Fallback tiles when the live feed is unavailable (no token / API error).
 const staticTiles = [
-  ["IMG_5768.jpg", "Black McLaren 570S fresh off a full detail"],
-  ["IMG_5759.jpg", "Black Land Rover Defender after a full detail"],
-  ["IMG_5763.jpg", "Paintwork gloss after a mobile detail"],
-  ["IMG_1406.jpg", "Matte Mercedes-AMG GT 63 detailed on site"],
-  ["IMG_5765.jpg", "McLaren 570S rear three-quarter, freshly detailed"],
-  ["IMG_5770.jpg", "Finished mobile detail in the Raleigh area"],
+  ["mclaren-spider-front.jpg", "Black McLaren 570S Spider fresh off a full detail"],
+  ["defender-grille.jpg", "Blacked-out Defender grille after an exterior detail"],
+  ["corvette-garage.jpg", "Orange Corvette C8 detailed in a parking garage"],
+  ["tacoma-trdpro-white.jpg", "White Tacoma TRD Pro at golden hour"],
+  ["mclaren-interior.jpg", "McLaren orange and alcantara interior, detailed"],
+  ["gle63-front.jpg", "Satin black AMG GLE 63 S detailed on site"],
 ] as const;
 
 // Profile-card strip; live posts and counts when the Instagram API
